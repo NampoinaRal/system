@@ -4,5 +4,5 @@
 	display:none !important;
 }
 .workspace-tab-header-container {
-	padding-right: var(--size-4-2);
+	padding-right: var(--size-4-2) !important;
 }
