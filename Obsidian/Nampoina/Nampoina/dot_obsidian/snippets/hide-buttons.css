@@ -1,5 +1,5 @@
 .mod-minimize,
 .mod-maximize,
 .mod-close {
-	display:none;
+	display:none !important;
 }
