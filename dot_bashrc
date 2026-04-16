@@ -12,3 +12,4 @@ PS1='[\u@\h \W]\$ '
 #Personnal aliases
 alias editconfig='chezmoi edit --watch'
 
+export PATH='$PATH:~/.local/bin'
