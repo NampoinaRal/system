@@ -1,0 +1,7 @@
+#Personnal aliases
+alias editconfig='chezmoi edit --watch'
+
+export PATH=$PATH:.local/bin:.config/composer/vendor/bin
+
+eval "$(oh-my-posh init bash --config /home/nampoina/.cache/oh-my-posh/themes/amro.omp.json)"
+
