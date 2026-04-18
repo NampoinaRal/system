@@ -33,7 +33,7 @@ indicators = [ "IdleInhibitor", "PowerProfile", "Audio", "Bluetooth", "Network",
 
 [appearance]
 style = "Islands"
-scale_factor = 1.5
+scale_factor = 1.1
 font_name = "CodeNewRoman Nerd Font"
 
 primary_color = "#eb5e28"
