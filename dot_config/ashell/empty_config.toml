@@ -2,9 +2,9 @@ log_level = "warn"
 outputs = "All"
 
 [modules]
-left = [ [ "appLauncher", "Updates", "Workspaces" ] ]
+left = [ [ "appLauncher", "Workspaces" ] ]
 center = []
-right = [ "SystemInfo", "MediaPlayer", [ "Tray", "Tempo", "Privacy", "Settings" ] ]
+right = [ "MediaPlayer", [ "Tray", "Tempo", "Privacy", "Settings" ] ]
 
 [updates]
 check_cmd = "checkupdates; paru -Qua"
