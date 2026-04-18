@@ -2,9 +2,9 @@ log_level = "warn"
 outputs = "All"
 
 [modules]
-left = [ [ "appLauncher", "Workspaces" ] ]
+left = [ "appLauncher", "Workspaces" ] 
 center = []
-right = [ "Tray", "Tempo", "Privacy", "Settings" ] ]
+right = [ "Tray", "Tempo", "Privacy", "Settings" ] 
 
 [workspaces]
 visibility_mode = "All"
