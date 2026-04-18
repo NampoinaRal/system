@@ -3,7 +3,7 @@ outputs = "All"
 
 [modules]
 left = [ [ "appLauncher", "Updates", "Workspaces" ] ]
-center = [ "WindowTitle" ]
+center = []
 right = [ "SystemInfo", "MediaPlayer", [ "Tray", "Tempo", "Privacy", "Settings" ] ]
 
 [updates]
