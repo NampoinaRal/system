@@ -38,8 +38,8 @@ font_name = "CodeNewRoman Nerd Font"
 primary_color = "#eb5e28"
 success_color = "#9ece6a"
 text_color = "#fffcf2"
-workspace_colors = [ "#7aa2f7", "#9ece6a" ]
-special_workspace_colors = [ "#7aa2f7", "#9ece6a" ]
+workspace_colors = "#eb5e28"
+special_workspace_colors = "#eb5e28"
 
 [appearance.danger_color]
 base = "#f7768e"
