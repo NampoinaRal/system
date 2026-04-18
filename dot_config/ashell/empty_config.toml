@@ -4,7 +4,7 @@ outputs = "All"
 [modules]
 left = [ [ "appLauncher", "Workspaces" ] ]
 center = []
-right = [ "MediaPlayer", [ "Tray", "Tempo", "Privacy", "Settings" ] ]
+right = [ "Tray", "Tempo", "Privacy", "Settings" ] 
 
 [updates]
 check_cmd = "checkupdates; paru -Qua"
