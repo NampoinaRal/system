@@ -2,7 +2,7 @@ log_level = "warn"
 outputs = "All"
 
 [modules]
-left = [ "appLauncher", "Workspaces" ] 
+left = [ "Workspaces" ] 
 center = []
 right = [ "Tray", "Tempo", "Privacy", "Settings" ] 
 
