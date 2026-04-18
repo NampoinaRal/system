@@ -8,7 +8,7 @@ right = [ "Tray", "Tempo", "Privacy", "Settings" ]
 
 [workspaces]
 visibility_mode = "MonitorSpecificExclusive"
-group_by_monitor = false
+group_by_monitor = true
 enable_workspace_filling = true
 
 [tempo]
@@ -33,6 +33,7 @@ indicators = [ "IdleInhibitor", "PowerProfile", "Audio", "Bluetooth", "Network",
 
 [appearance]
 style = "Islands"
+font = "CodeNewRomanNerdFont"
 
 primary_color = "#7aa2f7"
 success_color = "#9ece6a"
