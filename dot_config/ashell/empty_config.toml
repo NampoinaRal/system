@@ -35,9 +35,9 @@ indicators = [ "IdleInhibitor", "PowerProfile", "Audio", "Bluetooth", "Network",
 style = "Islands"
 font_name = "CodeNewRoman Nerd Font"
 
-primary_color = "#7aa2f7"
+primary_color = "#eb5e28"
 success_color = "#9ece6a"
-text_color = "#a9b1d6"
+text_color = "#fffcf2"
 workspace_colors = [ "#7aa2f7", "#9ece6a" ]
 special_workspace_colors = [ "#7aa2f7", "#9ece6a" ]
 
@@ -47,5 +47,4 @@ weak = "#e0af68"
 
 background_color = "#252422"
 
-[appearance.secondary_color]
-base = "#0c0d14"
+secondary_color = "#ccc5b9"
