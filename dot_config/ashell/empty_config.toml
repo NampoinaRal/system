@@ -7,7 +7,7 @@ center = []
 right = [ "Tray", "Tempo", "Privacy", "Settings" ] 
 
 [workspaces]
-visibility_mode = "All"
+visibility_mode = "MonitorSpecificExclusive"
 group_by_monitor = false
 enable_workspace_filling = true
 
@@ -30,13 +30,6 @@ network_indicator_format = "Icon"
 bluetooth_indicator_format = "Icon"
 brightness_indicator_format = "Icon"
 indicators = [ "IdleInhibitor", "PowerProfile", "Audio", "Bluetooth", "Network", "Battery" ]
-
-[[settings.CustomButton]]
-name = "Virtual Keyboard"
-icon = "⌨️"
-command = "/path/to/toggle-keyboard.sh"
-status_command = "/path/to/check-keyboard-status.sh"
-tooltip = "Toggle On-Screen Keyboard"
 
 [appearance]
 style = "Islands"
