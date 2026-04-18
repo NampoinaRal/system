@@ -39,7 +39,6 @@ primary_color = "#eb5e28"
 success_color = "#9ece6a"
 text_color = "#fffcf2"
 workspace_colors = "#eb5e28"
-special_workspace_colors = "#eb5e28"
 
 [appearance.danger_color]
 base = "#f7768e"
