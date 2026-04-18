@@ -1,6 +1,5 @@
 log_level = "warn"
 outputs = "All"
-position = "Bottom"
 
 [modules]
 left = [ [ "appLauncher", "Updates", "Workspaces" ] ]
