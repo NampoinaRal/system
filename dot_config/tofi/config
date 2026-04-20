@@ -1,22 +1,9 @@
-# Default config for tofi
-#
-# Copy this file to ~/.config/tofi/config and get customising!
-#
-# A complete reference of available options can be found in `man 5 tofi`.
-
 #
 ### Fonts
 #
-	# Font to use, either a path to a font file or a name.
-	#
-	# If a path is given, tofi will startup much quicker, but any
-	# characters not in the chosen font will fail to render.
-	#
-	# Otherwise, fonts are interpreted in Pango format.
-	font = "Sans"
+	font = "/usr/share/fonts/OTF/CodeNewRomanNerdFont-Regular.otf"
 
-	# Point size of text.
-	font-size = 24
+	font-size = 16
 
 	# Comma separated list of OpenType font feature settings to apply,
 	# if supported by the chosen font. The format is similar to the CSS
