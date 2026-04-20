@@ -20,7 +20,7 @@
 	prompt-background-corner-radius = 0
 
 	# Placeholder text theme
-	placeholder-color = #FFFFFFA8
+	placeholder-color = #eb5e28
 	placeholder-background = #00000000
 	placeholder-background-padding = 0
 	placeholder-background-corner-radius = 0
