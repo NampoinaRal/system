@@ -16,7 +16,7 @@
 	selection-color = #eb5e28
 	selection-background = #252422
 	selection-background-padding = 5
-	selection-match-color = #403d39
+	selection-match-color = #ccc5b9
 
 #
 ### Text layout
