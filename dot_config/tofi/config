@@ -21,22 +21,17 @@
 ### Text layout
 #
 	prompt-text = "Lancer : "
-
-	# Spacing between results in pixels. Can be negative.
 	result-spacing = 3
 
 	# List results horizontally.
 	horizontal = false
 
-	# Minimum width of input in horizontal mode.
-	min-input-width = 0
-
 #
 ### Window theming
 #
 	# Width and height of the window. Can be pixels or a percentage.
-	width = 1280
-	height = 720
+	width = 60%
+	height = 80%
 
 	background-color = #252422
 	outline-width = 0
