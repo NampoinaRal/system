@@ -23,7 +23,7 @@
 	prompt-text = "Lancer : "
 
 	# Spacing between results in pixels. Can be negative.
-	result-spacing = 2
+	result-spacing = 3
 
 	# List results horizontally.
 	horizontal = false
