@@ -120,7 +120,7 @@
 	background-color = #252422
 
 	# Width of the border outlines in pixels.
-	outline-width = 2
+	outline-width = 0
 
 	# Border outline color
 	outline-color = #eb5e28
