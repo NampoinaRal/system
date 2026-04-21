@@ -1,5 +1,6 @@
 #Personnal aliases
 alias editconfig='chezmoi edit --watch'
+alias icat='kitten icat'
 
 export PATH=$PATH:/home/nampoina/.local/bin:/home/nampoina/.config/composer/vendor/bin
 
