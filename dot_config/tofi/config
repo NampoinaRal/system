@@ -39,6 +39,6 @@
 ### Behaviour
 #
 	hide-cursor = true
-  matching-algorithm = fuzzy
+  #matching-algorithm = fuzzy
 	hidden-character = "*"
 	drun-launch = true
