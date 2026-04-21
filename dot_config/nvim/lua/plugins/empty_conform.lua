@@ -4,6 +4,7 @@ return {
 		formatters_by_ft = {
 			php = { "phpcbf" },
 			javascript = { "prettier" },
+			scss = { "stylelint" },
 		},
 	},
 }
