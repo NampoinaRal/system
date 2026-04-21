@@ -3,6 +3,7 @@ return {
 	opts = {
 		linters_by_ft = {
 			php = { "phpcs" },
+			javascript = { "eslint" },
 		},
 	},
 }
