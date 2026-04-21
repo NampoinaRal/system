@@ -4,6 +4,7 @@ return {
 		linters_by_ft = {
 			php = { "phpcs" },
 			javascript = { "eslint" },
+			scss = { "stylelint" },
 		},
 	},
 }
