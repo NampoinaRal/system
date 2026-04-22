@@ -1,31 +1,8 @@
 # See dunst(5) for all configuration options
 
 [global]
-    ### Display ###
-
-    # Which monitor should the notifications be displayed on.
-    monitor = 0
-
-    # Display notification on focused monitor.  Possible modes are:
-    #   mouse: follow mouse pointer
-    #   keyboard: follow window with keyboard focus
-    #   none: don't follow anything
-    #
-    # "keyboard" needs a window manager that exports the
-    # _NET_ACTIVE_WINDOW property.
-    # This should be the case for almost all modern window managers.
-    #
-    # If this option is set to mouse or keyboard, the monitor option
-    # will be ignored.
-    follow = none
-
-    ### Geometry ###
-
-    # The width of the window, excluding the frame.
-    # dynamic width from 0 to 300
-    # width = (0, 300)
-    # constant width of 300
-    width = 300
+    follow = mouse
+    width = (0, 300)
 
     # The height of a single notification, excluding the frame.
     # dynamic height from 0 to 300
@@ -217,12 +194,7 @@
     # Display indicators for URLs (U) and actions (A).
     show_indicators = yes
 
-    # When set to true (recommended), you can use POSIX regular expressions for filtering rules.
-    # If this is set to false (not recommended), dunst will use fnmatch(3) for matching strings.
-    # Dunst doesn't pass any flags to fnmatch, so you cannot make use of extended patterns.
-    #
-    # Note that this will eventually be true by default.
-    enable_posix_regex = false
+    enable_posix_regex = true
 
     ### Icons ###
 
