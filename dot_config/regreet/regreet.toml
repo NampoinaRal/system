@@ -4,7 +4,7 @@
 
 [background]
 # Path to the background image
-path = "/usr/share/backgrounds/greeter.jpg"
+path = "/home/nampoina/wallpapers/livre.png"
 
 # How the background image covers the screen if the aspect ratio doesn't match
 # Available values: "Fill", "Contain", "Cover", "ScaleDown"
@@ -14,7 +14,7 @@ fit = "Contain"
 
 # The entries defined in this section will be passed to the session as environment variables when it is started
 [env]
-ENV_VARIABLE = "value"
+# ENV_VARIABLE = "value"
 
 [GTK]
 # Whether to use the dark theme
@@ -27,10 +27,10 @@ cursor_theme_name = "Adwaita"
 cursor_blink = true
 
 # Font name and size
-font_name = "Cantarell 16"
+font_name = "CodeNewRomanNerdFont 12"
 
 # Icon theme name
-icon_theme_name = "Adwaita"
+icon_theme_name = "Papirus-Dark"
 
 # GTK theme name
 theme_name = "Adwaita"
@@ -43,7 +43,7 @@ reboot = ["systemctl", "reboot"]
 poweroff = ["systemctl", "poweroff"]
 
 # The command prefix for X11 sessions to start the X server
-x11_prefix = [ "startx", "/usr/bin/env" ]
+# x11_prefix = [ "startx", "/usr/bin/env" ]
 
 [appearance]
 # The message that initially displays on startup
@@ -60,7 +60,7 @@ resolution = "500ms"
 
 # Override system timezone (IANA Time Zone Database name, aka /etc/zoneinfo path)
 # Remove to use the system time zone.
-timezone = "America/Chicago"
+timezone = "Indian/Antananarivo"
 
 # Ask GTK to make the label at least this wide. This helps keeps the parent element layout and width consistent.
 # Experiment with different widths, the interpretation of this value is entirely up to GTK.
