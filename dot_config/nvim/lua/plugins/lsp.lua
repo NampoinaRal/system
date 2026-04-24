@@ -2,7 +2,7 @@ return {
 	"neovim/nvim-lspconfig",
 	opts = {
 		servers = {
-			-- intelephense = {},
+			intelephense = {},
 			hyprls = {},
 			ts_ls = {},
 		},
