@@ -1,10 +1,10 @@
 return {
-  { "doums/darcula" },
+	{ "doums/darcula" },
 
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "dracula",
-    },
-  },
+	{
+		"LazyVim/LazyVim",
+		opts = {
+			colorscheme = "draculaOriginal",
+		},
+	},
 }
