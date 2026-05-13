@@ -1,0 +1,6 @@
+$white = rgb(255,252,242)
+$silver = rgb(204,197,185)
+$brown = rgb(64,61,57)
+$black = rgb(37,36,34)
+$paprika = rgb(235,94,40)
+$shadow = rgba(37,36,34,0.5)
