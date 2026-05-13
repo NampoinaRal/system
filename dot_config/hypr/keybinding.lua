@@ -3,6 +3,9 @@
 -------------------
 
 local mainMod = "SUPER"
+local terminal = "kitty"
+local fileManager = "thunar"
+local menu = "tofi-drun"
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + C", hl.dsp.window.close())
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
