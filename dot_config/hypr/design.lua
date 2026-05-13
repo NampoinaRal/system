@@ -1,102 +1,69 @@
-#####################
-### LOOK AND FEEL ###
-#####################
+---------------------
+--- LOOK AND FEEL ---
+---------------------
 
-# Refer to https://wiki.hypr.land/Configuring/Variables/
+hl.config({
+	general = {
+		gaps_out = 10,
+		border_size = 2,
 
-# https://wiki.hypr.land/Configuring/Variables/#general
-general {
-    gaps_out = 10
-    border_size = 2
+		col = {
+			active_border = paprika,
+			inactive_border = silver,
+		},
+	},
+	decoration = {
+		rounding = 5,
 
-    # https://wiki.hypr.land/Configuring/Variables/#variable-types for info about colors
-    col.active_border = $paprika
-    col.inactive_border = $silver
-}
+		shadow = {
+			color = shadow,
+		},
+	},
 
-# https://wiki.hypr.land/Configuring/Variables/#decoration
-decoration {
-  rounding = 5
+	dwindle = {
+		smart_split = true,
+	},
 
-  shadow {
-    color = $shadow
-  }
-}
+	master = {
+		new_status = "master",
+	},
 
-# https://wiki.hypr.land/Configuring/Variables/#animations
-animations {
-    # Default curves, see https://wiki.hypr.land/Configuring/Animations/#curves
-    #        NAME,           X0,   Y0,   X1,   Y1
-    bezier = easeOutQuint,   0.23, 1,    0.32, 1
-    bezier = easeInOutCubic, 0.65, 0.05, 0.36, 1
-    bezier = linear,         0,    0,    1,    1
-    bezier = almostLinear,   0.5,  0.5,  0.75, 1
-    bezier = quick,          0.15, 0,    0.1,  1
+	scrolling = {
+		column_width = 0.99,
+	},
 
-    # Default animations, see https://wiki.hypr.land/Configuring/Animations/
-    #           NAME,          ONOFF, SPEED, CURVE,        [STYLE]
-    animation = global,        1,     10,    default
-    animation = border,        1,     5.39,  easeOutQuint
-    animation = windows,       1,     4.79,  easeOutQuint
-    animation = windowsIn,     1,     4.1,   easeOutQuint, popin 87%
-    animation = windowsOut,    1,     1.49,  linear,       popin 87%
-    animation = fadeIn,        1,     1.73,  almostLinear
-    animation = fadeOut,       1,     1.46,  almostLinear
-    animation = fade,          1,     3.03,  quick
-    animation = layers,        1,     3.81,  easeOutQuint
-    animation = layersIn,      1,     4,     easeOutQuint, fade
-    animation = layersOut,     1,     1.5,   linear,       fade
-    animation = fadeLayersIn,  1,     1.79,  almostLinear
-    animation = fadeLayersOut, 1,     1.39,  almostLinear
-    animation = workspaces,    1,     1.94,  almostLinear, fade
-    animation = workspacesIn,  1,     1.21,  almostLinear, fade
-    animation = workspacesOut, 1,     1.94,  almostLinear, fade
-    animation = zoomFactor,    1,     7,     quick
-}
+	misc = {
+		force_default_wallpaper = 1,
+		disable_hyprland_logo = true,
+		font_family = "CodeNewRomanNerdFont",
+		splash_font_family = "CodeNewRomanNerdFont",
+	},
+})
 
-# Ref https://wiki.hypr.land/Configuring/Workspace-Rules/
-# "Smart gaps" / "No gaps when only"
-# uncomment all if you wish to use that.
-# workspace = w[tv1], gapsout:0, gapsin:0
-# workspace = f[1], gapsout:0, gapsin:0
-# windowrule {
-#     name = no-gaps-wtv1
-#     match:float = false
-#     match:workspace = w[tv1]
-#
-#     border_size = 0
-#     rounding = 0
-# }
-#
-# windowrule {
-#     name = no-gaps-f1
-#     match:float = false
-#     match:workspace = f[1]
-#
-#     border_size = 0
-#     rounding = 0
-# }
+-- Default curves and animations, see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Animations/
+hl.curve("easeOutQuint", { type = "bezier", points = { { 0.23, 1 }, { 0.32, 1 } } })
+hl.curve("easeInOutCubic", { type = "bezier", points = { { 0.65, 0.05 }, { 0.36, 1 } } })
+hl.curve("linear", { type = "bezier", points = { { 0, 0 }, { 1, 1 } } })
+hl.curve("almostLinear", { type = "bezier", points = { { 0.5, 0.5 }, { 0.75, 1 } } })
+hl.curve("quick", { type = "bezier", points = { { 0.15, 0 }, { 0.1, 1 } } })
 
-# See https://wiki.hypr.land/Configuring/Dwindle-Layout/ for more
-dwindle {
-    smart_split = true
-}
+-- Default springs
+hl.curve("easy", { type = "spring", mass = 1, stiffness = 71.2633, dampening = 15.8273644 })
 
-# See https://wiki.hypr.land/Configuring/Master-Layout/ for more
-master {
-    new_status = master
-}
-
-scrolling {
-  column_width = 0.99
-}
-
-# https://wiki.hypr.land/Configuring/Variables/#misc
-misc {
-  force_default_wallpaper = 1
-  disable_hyprland_logo = true
-  font_family = CodeNewRomanNerdFont
-  splash_font_family = CodeNewRomanNerdFont
-}
-
-
+hl.animation({ leaf = "global", enabled = true, speed = 10, bezier = "default" })
+hl.animation({ leaf = "border", enabled = true, speed = 5.39, bezier = "easeOutQuint" })
+hl.animation({ leaf = "windows", enabled = true, speed = 4.79, spring = "easy" })
+hl.animation({ leaf = "windowsIn", enabled = true, speed = 4.1, spring = "easy", style = "popin 87%" })
+hl.animation({ leaf = "windowsOut", enabled = true, speed = 1.49, bezier = "linear", style = "popin 87%" })
+hl.animation({ leaf = "fadeIn", enabled = true, speed = 1.73, bezier = "almostLinear" })
+hl.animation({ leaf = "fadeOut", enabled = true, speed = 1.46, bezier = "almostLinear" })
+hl.animation({ leaf = "fade", enabled = true, speed = 3.03, bezier = "quick" })
+hl.animation({ leaf = "layers", enabled = true, speed = 3.81, bezier = "easeOutQuint" })
+hl.animation({ leaf = "layersIn", enabled = true, speed = 4, bezier = "easeOutQuint", style = "fade" })
+hl.animation({ leaf = "layersOut", enabled = true, speed = 1.5, bezier = "linear", style = "fade" })
+hl.animation({ leaf = "fadeLayersIn", enabled = true, speed = 1.79, bezier = "almostLinear" })
+hl.animation({ leaf = "fadeLayersOut", enabled = true, speed = 1.39, bezier = "almostLinear" })
+hl.animation({ leaf = "workspaces", enabled = true, speed = 1.94, bezier = "almostLinear", style = "fade" })
+hl.animation({ leaf = "workspacesIn", enabled = true, speed = 1.21, bezier = "almostLinear", style = "fade" })
+hl.animation({ leaf = "workspacesOut", enabled = true, speed = 1.94, bezier = "almostLinear", style = "fade" })
+hl.animation({ leaf = "zoomFactor", enabled = true, speed = 7, bezier = "quick" })
