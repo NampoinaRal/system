@@ -41,6 +41,7 @@ hl.config({
 	misc = {
 		force_default_wallpaper = 1,
 		disable_hyprland_logo = true,
+		disable_splash_rendering = true,
 		font_family = "CodeNewRomanNerdFont",
 		splash_font_family = "CodeNewRomanNerdFont",
 	},
