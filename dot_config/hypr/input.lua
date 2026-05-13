@@ -1,17 +1,21 @@
-#############
-### INPUT ###
-#############
+-------------
+--- INPUT ---
+-------------
 
-# https://wiki.hypr.land/Configuring/Variables/#input
-input {
-    kb_layout = fr
-    numlock_by_default = true
-    follow_mouse = 1
+hl.gesture({
+	fingers = 3,
+	direction = "horizontal",
+	action = "workspace",
+})
 
-    touchpad {
-        natural_scroll = true
-    }
-}
+hl.config({
+	input = {
+		kb_layout = "fr",
+		numlock_by_default = true,
+		follow_mouse = 1,
 
-# See https://wiki.hypr.land/Configuring/Gestures
-gesture = 3, horizontal, workspace
+		touchpad = {
+			natural_scroll = true,
+		},
+	},
+})
