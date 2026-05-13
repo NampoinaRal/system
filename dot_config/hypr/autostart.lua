@@ -1,12 +1,14 @@
-#################
-### AUTOSTART ###
-#################
+-----------------
+--- AUTOSTART ---
+-----------------
 
-exec-once = dunst
-exec-once = systemctl --user start hyprpolkitagent
-exec-once = keepassxc
-exec-once = hyprpaper
-exec-once = hypridle
-exec-once = ashell
-exec-once = thunderbird
-exec-once = wl-paste --watch clipvault store
+hl.on("hyprland.start", function()
+	hl.exec_cmd("dunst")
+	hl.exec_cmd("systemctl --user start hyprpolkitagent")
+	hl.exec_cmd("keepassxc")
+	hl.exec_cmd("hyprpaper")
+	hl.exec_cmd("hypridle")
+	hl.exec_cmd("ashell")
+	hl.exec_cmd("thunderbird")
+	hl.exec_cmd("wl-paste")
+end)
