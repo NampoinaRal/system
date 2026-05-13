@@ -1,5 +1,3 @@
-require("colors")
-require("programs")
 require("monitors")
 require("autostart")
 require("env")
