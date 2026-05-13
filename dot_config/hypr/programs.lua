@@ -1,10 +1,7 @@
-###################
-### MY PROGRAMS ###
-###################
+-------------------
+--- MY PROGRAMS ---
+-------------------
 
-# See https://wiki.hypr.land/Configuring/Keywords/
-
-# Set programs that you use
-$terminal = kitty
-$fileManager = thunar
-$menu = tofi-drun
+local terminal = "kitty"
+local fileManager = "thunar"
+local menu = "tofi-drun"
