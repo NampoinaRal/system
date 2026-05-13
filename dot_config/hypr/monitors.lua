@@ -1,8 +1,15 @@
-################
-### MONITORS ###
-################
+----------------
+--- MONITORS ---
+----------------
 
-# See https://wiki.hypr.land/Configuring/Monitors/
-monitor=eDP-1,preferred,0x0,auto
-monitor=HDMI-A-1,preferred,-1680x0,auto
-
+hl.monitor({
+	output = "eDP-1",
+	mode = "preferred",
+	position = "0x0",
+	scale = "auto",
+}, {
+	output = "HDMI-A-1",
+	mode = "preferred",
+	position = "-1680x0",
+	scale = "auto",
+})
