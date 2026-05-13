@@ -1,6 +1,12 @@
 ---------------------
 --- LOOK AND FEEL ---
 ---------------------
+local white = "rgb(255, 252, 242)"
+local silver = "rgb(204, 197, 185)"
+local brown = "rgb(64, 61, 57)"
+local black = "rgb(37, 36, 34)"
+local paprika = "rgb(235, 94, 40)"
+local shadow = "rgba(37, 36, 34, 0.5)"
 
 hl.config({
 	general = {
