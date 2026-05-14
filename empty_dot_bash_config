@@ -6,5 +6,3 @@ alias ssh='kitten ssh'
 export PATH=$PATH:/home/nampoina/.local/bin:/home/nampoina/.config/composer/vendor/bin
 
 eval "$(oh-my-posh init bash --config /home/nampoina/.cache/oh-my-posh/themes/amro.omp.json)"
-
-export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
