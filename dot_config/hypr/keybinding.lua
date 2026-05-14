@@ -56,6 +56,8 @@ hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), { locked = tr
 hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
 
+hl.bind(mainMod .. "+ KP_7", hl.dsp.focus({ workspace = 7 }))
+
 for i = 1, 10 do
 	local key = "KP_" .. i % 10 -- 10 maps to key 0
 	hl.bind(mainMod .. " + " .. key, hl.dsp.focus({ workspace = i }))
