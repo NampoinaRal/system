@@ -56,8 +56,29 @@ hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), { locked = tr
 hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
 
-hl.bind(mainMod .. "+ key:87", hl.dsp.focus({ workspace = 1 }))
-hl.bind(mainMod .. "+ SHIFT + key:87", hl.dsp.window.move({ workspace = 1 }))
+hl.bind(mainMod .. "+ code:87", hl.dsp.focus({ workspace = 1 }))
+hl.bind(mainMod .. "+ SHIFT + code:87", hl.dsp.window.move({ workspace = 1 }))
 
-hl.bind(mainMod .. "+ key:88", hl.dsp.focus({ workspace = 2 }))
-hl.bind(mainMod .. "+ SHIFT + key:88", hl.dsp.window.move({ workspace = 2 }))
+hl.bind(mainMod .. "+ code:88", hl.dsp.focus({ workspace = 2 }))
+hl.bind(mainMod .. "+ SHIFT + code:88", hl.dsp.window.move({ workspace = 2 }))
+
+hl.bind(mainMod .. "+ code:89", hl.dsp.focus({ workspace = 3 }))
+hl.bind(mainMod .. "+ SHIFT + code:89", hl.dsp.window.move({ workspace = 3 }))
+
+hl.bind(mainMod .. "+ code:83", hl.dsp.focus({ workspace = 4 }))
+hl.bind(mainMod .. "+ SHIFT + code:83", hl.dsp.window.move({ workspace = 4 }))
+
+hl.bind(mainMod .. "+ code:84", hl.dsp.focus({ workspace = 5 }))
+hl.bind(mainMod .. "+ SHIFT + code:84", hl.dsp.window.move({ workspace = 5 }))
+
+hl.bind(mainMod .. "+ code:85", hl.dsp.focus({ workspace = 6 }))
+hl.bind(mainMod .. "+ SHIFT + code:85", hl.dsp.window.move({ workspace = 6 }))
+
+hl.bind(mainMod .. "+ code:79", hl.dsp.focus({ workspace = 7 }))
+hl.bind(mainMod .. "+ SHIFT + code:79", hl.dsp.window.move({ workspace = 7 }))
+
+hl.bind(mainMod .. "+ code:80", hl.dsp.focus({ workspace = 8 }))
+hl.bind(mainMod .. "+ SHIFT + code:80", hl.dsp.window.move({ workspace = 8 }))
+
+hl.bind(mainMod .. "+ code:81", hl.dsp.focus({ workspace = 9 }))
+hl.bind(mainMod .. "+ SHIFT + code:81", hl.dsp.window.move({ workspace = 9 }))
