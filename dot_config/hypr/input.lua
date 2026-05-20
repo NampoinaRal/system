@@ -11,6 +11,7 @@ hl.gesture({
 hl.config({
 	input = {
 		follow_mouse = 1,
+		resolve_binds_by_sym = true,
 
 		touchpad = {
 			natural_scroll = true,
