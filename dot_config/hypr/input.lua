@@ -10,7 +10,7 @@ hl.gesture({
 
 hl.config({
 	input = {
-		kb_layout = "fr",
+		kb_layout = "en",
 		numlock_by_default = true,
 		follow_mouse = 1,
 
