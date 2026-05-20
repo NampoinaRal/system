@@ -21,6 +21,13 @@ hl.bind(mainMod .. " + L", function()
 		},
 	})
 end)
+hl.bind(mainMod .. " + D", function()
+	hl.config({
+		general = {
+			layout = "dwindle",
+		},
+	})
+end)
 
 hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
