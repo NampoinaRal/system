@@ -29,6 +29,12 @@ hl.bind(mainMod .. " + D", function()
 		},
 	})
 end)
+hl.bind(
+	mainMod .. " + V",
+	hl.dsp.exec_cmd(
+		"clipvault list | awk -F '\t' '{print $1 \"|\" $2}' | tofi | cut -d '|' -f1 | clipvault get | wl-copy"
+	)
+)
 
 hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
