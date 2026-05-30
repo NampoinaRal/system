@@ -9,7 +9,7 @@ local menu = "tofi-drun"
 
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + C", hl.dsp.window.close())
-hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("ls -a /home/nampoina/ | tofi | " .. fileManager .. "$1"))
+hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("ls -a /home/nampoina/ | tofi | " .. fileManager .. " $1"))
 hl.bind(mainMod .. " + space", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + SHIFT + space", hl.dsp.exec_cmd("tofi-run | bash"))
 hl.bind(mainMod .. " + F", hl.dsp.window.float({ action = "toggle" }))
