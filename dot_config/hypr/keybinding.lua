@@ -106,7 +106,7 @@ hl.bind(mainMod .. "+ code:81", hl.dsp.focus({ workspace = 9 }))
 hl.bind(mainMod .. "+ SHIFT + code:81", hl.dsp.window.move({ workspace = 9 }))
 
 hl.bind("Print", hl.dsp.exec_cmd("hyprshot -m output -o ~/hyprshot/"))
-hl.bind(mainMod .. "Print", hl.dsp.exec_cmd("hyprshot -z -m region -o ~/hyprshot/"))
+hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd("hyprshot -z -m region -o ~/hyprshot/"))
 
 for i = 1, 10 do
 	local key = i % 10 -- 10 maps to key 0
